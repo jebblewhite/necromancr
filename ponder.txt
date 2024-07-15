@@ -4,13 +4,16 @@ necromancr - a game which focuses on orb-pondering. (pixelart by u/CobalTech)
 1. intro
 no orb yet.
 must make way in the world without orb.
-
+    beg
+    steal
+    toil
+    
 
 
 
 2. pondering
 ponder orb to gain mana.
-
+    orb must be on screen to ponder.
 use mana for fun stuff.
 
 

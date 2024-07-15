@@ -4,99 +4,55 @@
   --text-color: #ffffff;
   --text-background-color: #424242;
   --border-color:  #ffffff;
+  --text-font-family: 'Roboto Mono', sans-serif;
 }
 
 body{
 	/*Basic Font Styling*/
-	font-family: 'Roboto Mono', sans-serif;
+	font-family: var(--text-font-family);
 	font-size:18px;
 	color: var(--text-color);
   background-color: var(--text-background-color);
 }
 
-
-.tin {
-    display: none;;
-    color: rgb(208, 208, 207)
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #424242;
+  color: var(--text-color);
 }
 
-.copper {
-    display: none;;
-    color: rgb(253, 196, 91)
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  color: var(--text-color);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--text-font-family);
+  padding: 14px 16px;
+  transition: 0.3s;
 }
 
-.workers {
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--text-color);
+  color: var(--text-background-color);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #424242;
+}
+
+/* Style the tab content */
+.tabcontent {
   display: none;
-}
-
-.worker {
-  display: none;
-}
-
-.oreincrease{
-  display: none;
-}
-
-.unassignedworkers{
-  display : none;
-  font-size: 12px;
-}
-
-.assignfarmer{
-  display : none;
-}
-
-.assignmerchant{
-  display : none;
-}
-
-.assignsoldier{
-  display : none;
-}
-
-.spirit {
-  display: none;;
-  color: rgb(253, 148, 255)
-}
-
-.timer {
-  color: rgb(253, 148, 255)
-}
-
-.trade {
-  display: none;
-}
-
-.warfare {
-  display: none;
-}
-
-.warfaredesc {
-  font-size: 12px;
-}
-
-.upgrades {
-  display: none
-}
-
-.grivna {
-  display: none;
-  color: gold
-}
-
-.crops {
-  display: none;
-  color: rgba(100, 199, 0, 0.907)
-}
-
-.trophies {
-  display: none;
-  color: rgb(234, 154, 125)
-}
-
-.bronze {
-  display: none;
-  color: rgb(216, 165, 14)
+  padding: 6px 12px;
+  color: var(--text-color);
+  font-family: var(--text-font-family);
+  border-top: none;
 }
 
 
@@ -151,25 +107,6 @@ body{
     border: 2px solid var(--text-background-color);
   }
 
-.waaaakeup{
-  background-color: blueviolet;
-  color: gold;
-}
-
-.tradeup{
-  background-color: #02aeae; 
-}
-
-.warfareup{
-  background-color: #d30101; 
-}
-
-.agriculture{
-  background-color: #3b8714; 
-}
-
-
-
 
 
 @keyframes cooldown {
@@ -189,45 +126,7 @@ body{
 	color: var(--text-color); 
 }
 
-.interactiveFiction {
-  width: 100%;
-  height: 100%;
-  display: none;
-}
-
-.procedural {
-  display: block;
-}
-
 .future{
   display: none
 }
 
-.costcopper{
-  border-color: rgb(253, 196, 91);
-}
-
-.costcrops{
-  border-color: rgba(100, 199, 0, 0.907);
-}
-
-.costtin{
-  border-color: rgb(208, 208, 207);
-}
-
-.costgrivna{
-  border-color: gold;
-}
-
-.costbronze{
-  border-color: rgb(216, 165, 14);
-}
-
-.costtrophies{
-  border-color: rgb(234, 154, 125);
-}
-
-.smaller{
-  font-size: 12px;
-  border: 1px solid white;
-}
